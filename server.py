@@ -11,7 +11,7 @@ if __name__ == '__main__':
   top_parser.add_argument('--model', action="store", dest="model", required=True, help="The model to emulate.", default="443")
   args = top_parser.parse_args()
   
-  options = [ "atp100", "atp200", "atp500", "atp700", "usgflex100", "usgflex100w", "usgflex200", "usgflex500", "usgflex700", "usg20-vpn", "usg20w-vpn"]
+  options = [ "atp100", "atp200", "atp500", "atp700", "atp800", "usgflex100", "usgflex100w", "usgflex200", "usgflex500", "usgflex700", "usg20-vpn", "usg20w-vpn"]
   if args.model not in options:
     print("[!] Provided model is not an option. Please select one of the following:")
     for option in options:
